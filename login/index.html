@@ -26,22 +26,20 @@
 					<div class="login-wrap p-0">
 		      	<h3 class="mb-4 text-center">Sudah Punya Akun?</h3>
 		      	<form id="loginForm" class="signin-form">
-					
-                <form id="loginForm">
 		      		<div class="form-group">
-		      			<input type="text" class="form-control" placeholder="Nama Pengguna" required>
+		      			<input type="text" id="username" class="form-control" placeholder="Nama Pengguna" required>
 		      		</div>
 	            <div class="form-group">
-	              <input id="password-field" type="password" class="form-control" placeholder="Kata Sandi" required>
+	              <input id="password-field" id="password" type="password" class="form-control" placeholder="Kata Sandi" required>
 	              <span toggle="#password-field" class="fa fa-fw fa-eye field-icon toggle-password"></span>
 	            </div>
+				<div id="alertBox" style="display:none; color:red; margin-bottom:10px;"></div>
 	            <div class="form-group">
 	            	<button type="submit" class="form-control btn btn-primary submit px-3" id="btnLogin">
 						<span>Login</span>
 						<span id="btn-Loader"></span>
 					</button>
-	            </div>
-				</form>
+				</div>
 	
 	            <div class="form-group d-md-flex">
 	            	<div class="w-50">
