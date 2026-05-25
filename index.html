@@ -33,20 +33,26 @@ http://www.templatemo.com/preview/templatemo_306_wooden_wall
             <h1><a href="#">Golden Retriever<span>Kenali "Golden Retriever" disini!</span></a></h1>
         </div>
         
-        <div id="menu" style="display: flex; gap: 15px;">
-			
-            <ul class="navigation">
-                <li><a href="#home" class="selected">Beranda<span class="ui_icon home"></span></a></li>
-                <li><a href="#aboutus">Tentang kami<span class="ui_icon aboutus"></span></a></li>
-                <li><a href="#services">Pelayanan<span class="ui_icon services"></span></a></li>
-                <li><a href="#gallery">Galeri<span class="ui_icon gallery"></span></a></li>
-                <li><a href="#contactus">Kontak kami<span class="ui_icon contactus"></span></a></li>
-				<p id="userInfo">Belum login</p>
+        <!-- Container Utama -->
+		<div id="menu">
+    		<!-- Tag UL sekarang menggunakan flex agar semua item di dalamnya berjejer ke samping -->
+    		<ul class="navigation" style="display: flex; gap: 20px; align-items: center; list-style: none; padding: 0; margin: 0;">
+        		<li><a href="#home" class="selected">Beranda<span class="ui_icon home"></span></a></li>
+        		<li><a href="#aboutus">Tentang kami<span class="ui_icon aboutus"></span></a></li>
+        		<li><a href="#services">Pelayanan<span class="ui_icon services"></span></a></li>
+        		<li><a href="#gallery">Galeri<span class="ui_icon gallery"></span></a></li>
+        		<li><a href="#contactus">Kontak kami<span class="ui_icon contactus"></span></a></li>
+        
+        		<!-- Bungkus dengan tag <li> agar struktur HTML tetap valid -->
+        		<li><p id="userInfo" style="margin: 0;">Belum login</p></li>
 
-				<div id="authArea">
-					<button onclick="goLogin()" class="nav-cta">Login</button>
-            </ul>
-        </div>
+        		<li>
+            		<div id="authArea">
+                		<button onclick="goLogin()" class="nav-cta">Login</button>
+            		</div> <!-- Perbaikan: Menambahkan penutup tag DIV yang hilang -->
+        		</li>
+    		</ul>
+		</div>
         
         <div id="content">
         
